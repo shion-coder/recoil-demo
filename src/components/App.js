@@ -1,9 +1,9 @@
-import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Catalog from "./Catalog";
-import Cart from "./Cart";
-import Header from "./Header";
-import { RecoilRoot } from "recoil";
+import React from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import Catalog from './Catalog';
+import Cart from './Cart';
+import Header from './Header';
+import { RecoilRoot } from 'recoil';
 
 const App = () => {
   return (

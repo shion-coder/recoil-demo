@@ -1,17 +1,19 @@
-import React from "react";
+import React from 'react';
+
 import { useAddItem } from '../store';
+
 const ids = [
-  "apple",
-  "orange",
-  "pear",
-  "tomato",
-  "watermelon",
-  "guava",
-  "mango",
-  "avacado",
-  "lime",
-  "lemon",
-  "kiwi",
+  'apple',
+  'orange',
+  'pear',
+  'tomato',
+  'watermelon',
+  'guava',
+  'mango',
+  'avocado',
+  'lime',
+  'lemon',
+  'kiwi',
 ];
 
 const products = ids.map((id, index) => ({ id, price: index + 1 }));
@@ -26,10 +28,7 @@ const Catalog = () => {
             <h4>
               {p.id} / ${p.price}
             </h4>
-            <button
-              className="ui button positive mini"
-              onClick={() => addItem(p)}
-            >
+            <button className="ui button positive mini" onClick={() => addItem(p)}>
               Add
             </button>
           </div>
